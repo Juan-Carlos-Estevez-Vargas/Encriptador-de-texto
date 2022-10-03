@@ -230,7 +230,7 @@
   /* Sección texto encriptado */
   .encriptado {
     width: 80%;
-    height: 10%;
+    height: 15%;
     left: 10%;
     top: 80%;
   }
@@ -242,6 +242,7 @@
     width: 80%;
   }
   .encriptado img {
+    top: 0;
     display: none;
     visibility: hidden;
   } /* Fin de la Sección texto encriptado */

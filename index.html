@@ -23,17 +23,27 @@
           <p>Solo letras minúsculas y sin acéntos</p>
         </div>
         <div class="botones">
-          <input class="btn-encriptar" type="button" value="Encriptar" />
-          <input class="btn-desencriptar" type="button" value="Desencriptar" />
+          <button class="btn-encriptar" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <input
+            class="btn-desencriptar"
+            type="button"
+            onclick="desencriptar()"
+            value="Desencriptar"
+          />
         </div>
       </div>
       <div class="encriptado">
         <img src="img/muñeco.png" alt="" />
         <div class="mensaje-encriptado">
           <h2>Ningún mensaje fue encontrado</h2>
-          <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+          <p class="mensaje" id="mensaje">
+            Ingresa el texto que deseas encriptar o desencriptar
+          </p>
         </div>
       </div>
     </div>
   </body>
+  <script src="encriptar.js"></script>
 </html>
