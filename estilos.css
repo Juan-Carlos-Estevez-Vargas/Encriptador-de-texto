@@ -13,15 +13,33 @@
 /* Panel Ptincipal */
 .texto {
   position: absolute;
-  width: 80%;
+  width: 42%;
+  height: 60%;
   left: 12%;
   top: 15%;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  background-color: #f3f5fc;
+  resize: none;
+}
+
+.texto::placeholder {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
   color: #0a3871;
+}
+
+.texto:focus,
+.texto:active {
+  border: none;
+  outline: none;
 }
 
 .terminos {
