@@ -181,4 +181,68 @@
   width: 80%;
   height: 50%;
   top: 15%;
+} /* Fin de la Sección texto encriptado */
+
+/* Diseño responsive */
+@media (max-width: 57.5em) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  /* Panel Ptincipal */
+  .encriptar {
+    width: 100%;
+  }
+  .texto {
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 5%;
+  }
+  .terminos {
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+  .terminos p {
+    font-size: 16px;
+  }
+  .botones {
+    width: 80%;
+    left: 10%;
+    top: 70%;
+  }
+  .btn-encriptar {
+    width: 48%;
+    border-radius: 16px;
+  }
+  .btn-desencriptar {
+    width: 48%;
+    border-radius: 16px;
+  }
+  .btn-desencriptar:hover,
+  .btn-encriptar:hover {
+    margin: 0.3%;
+    width: 47.5%;
+    padding: 1.8%;
+  } /* Fin de la sección principal */
+
+  /* Sección texto encriptado */
+  .encriptado {
+    width: 80%;
+    height: 10%;
+    left: 10%;
+    top: 80%;
+  }
+  .mensaje-encriptado {
+    width: 100%;
+    top: 5%;
+  }
+  .mensaje-encriptado p {
+    width: 80%;
+  }
+  .encriptado img {
+    display: none;
+    visibility: hidden;
+  } /* Fin de la Sección texto encriptado */
 }
