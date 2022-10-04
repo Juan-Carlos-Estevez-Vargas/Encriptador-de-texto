@@ -6,7 +6,11 @@ function encriptar() {
     .replace(/a/gi, "ai")
     .replace(/o/gi, "ober")
     .replace(/u/gi, "ufat");
-  document.getElementById("texto").value = textoCifrado;
+  if (document.getElementById("texto").value.length != 0) {
+    document.getElementById("texto").value = textoCifrado;
+    document.getElementById("titulo-mensaje").textContent =
+      "Texto encriptado con éxito";
+  }
 }
 
 function desencriptar() {
@@ -17,8 +21,9 @@ function desencriptar() {
     .replace(/ai/gi, "a")
     .replace(/ober/gi, "o")
     .replace(/ufat/gi, "u");
-  document.getElementById("texto").value = textoCifrado;
+  if (document.getElementById("texto").value.length != 0) {
+    document.getElementById("texto").value = textoCifrado;
+    document.getElementById("titulo-mensaje").textContent =
+      "Texto desencriptado con éxito";
+  }
 }
-
-// var botonDesencriptar = document.querySelector("#btn-desencriptar");
-// botonDesencriptar.onclick = desencriptar;
