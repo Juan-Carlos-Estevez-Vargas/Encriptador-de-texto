@@ -6,8 +6,7 @@ function encriptar() {
     .replace(/a/gi, "ai")
     .replace(/o/gi, "ober")
     .replace(/u/gi, "ufat");
-  document.getElementById("mensaje").textContent = textoCifrado;
-  console.log(textoCifrado);
+  document.getElementById("texto").value = textoCifrado;
 }
 
 function desencriptar() {
@@ -18,8 +17,7 @@ function desencriptar() {
     .replace(/ai/gi, "a")
     .replace(/ober/gi, "o")
     .replace(/ufat/gi, "u");
-  document.getElementById("mensaje").textContent = textoCifrado;
-  console.log(textoCifrado);
+  document.getElementById("texto").value = textoCifrado;
 }
 
 // var botonDesencriptar = document.querySelector("#btn-desencriptar");
