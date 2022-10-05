@@ -14,6 +14,8 @@ function encriptar() {
       "Texto encriptado con éxito";
     document.getElementById("parrafo").textContent = "";
     document.getElementById("muñeco").src = "/img/encriptado.jpg";
+  } else {
+    alert("Debes ingresar un texto");
   }
 }
 
@@ -33,5 +35,7 @@ function desencriptar() {
       "Texto desencriptado con éxito";
     document.getElementById("parrafo").textContent = "";
     document.getElementById("muñeco").src = "/img/desencriptado.jpg";
+  } else {
+    alert("Debes ingresar un texto");
   }
 }
