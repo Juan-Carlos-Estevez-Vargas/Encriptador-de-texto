@@ -16,7 +16,7 @@ function encriptar() {
     document.getElementById("muñeco").src = "./img/encriptado.jpg";
   } else {
     document.getElementById("muñeco").src = "./img/muñeco.png";
-    alert("Debes ingresar un texto");
+    swal("Ooops!", "Debes ingresar un texto!", "warning");
   }
 }
 
@@ -38,6 +38,6 @@ function desencriptar() {
     document.getElementById("muñeco").src = "./img/desencriptado.jpg";
   } else {
     document.getElementById("muñeco").src = "./img/muñeco.png";
-    alert("Debes ingresar un texto");
+    swal("Ooops!", "Debes ingresar un texto!", "warning");
   }
 }
