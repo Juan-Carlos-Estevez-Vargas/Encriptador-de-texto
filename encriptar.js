@@ -13,8 +13,9 @@ function encriptar() {
     document.getElementById("titulo-mensaje").textContent =
       "Texto encriptado con éxito";
     document.getElementById("parrafo").textContent = "";
-    document.getElementById("muñeco").src = "img/encriptado.jpg";
+    document.getElementById("muñeco").src = "./img/encriptado.jpg";
   } else {
+    document.getElementById("muñeco").src = "./img/muñeco.png";
     alert("Debes ingresar un texto");
   }
 }
@@ -34,8 +35,9 @@ function desencriptar() {
     document.getElementById("titulo-mensaje").textContent =
       "Texto desencriptado con éxito";
     document.getElementById("parrafo").textContent = "";
-    document.getElementById("muñeco").src = "img/desencriptado.jpg";
+    document.getElementById("muñeco").src = "./img/desencriptado.jpg";
   } else {
+    document.getElementById("muñeco").src = "./img/muñeco.png";
     alert("Debes ingresar un texto");
   }
 }
