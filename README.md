@@ -5,6 +5,9 @@ Encriptado y desencriptado de texto sencillo, desarrollado como desafío en Alur
 * Clonar el proyecto en tu máquina local
 * Abrir el proyecto con algún editor de código, se recomienda el uso de Visual Studio Code
 * Abrir el archivo [Index](https://github.com/Juan-Carlos-Estevez-Vargas/Encriptador-de-texto/blob/master/index.html) para ver la aplicación en la web.
+
+Puedes ver una explicación mas detallada en mi canal de [YouTube](https://www.youtube.com/watch?v=QI4Jaz3gLm4)
+
 ### Si te ha gustado el proyecto invitame un café
 <div align="left">
   <a href="https://paypal.me/JEstevezVargas" target="_blank" style="display: inline-block;">
