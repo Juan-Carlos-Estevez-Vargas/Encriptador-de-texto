@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -10,7 +11,6 @@
   background: #f3f5fc;
 }
 
-/* Panel Ptincipal */
 .texto {
   position: absolute;
   width: 42%;
@@ -18,8 +18,7 @@
   left: 12%;
   top: 15%;
   border: none;
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
@@ -28,17 +27,11 @@
 }
 
 .texto::placeholder {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 150%;
   color: #0a3871;
 }
 
 .texto:focus,
 .texto:active {
-  border: none;
   outline: none;
 }
 
@@ -46,7 +39,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   position: absolute;
   width: 80%;
@@ -56,8 +49,7 @@
 
 .terminos p {
   width: 80%;
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
@@ -80,7 +72,8 @@
   top: 82%;
 }
 
-.btn-encriptar {
+.btn-encriptar,
+.btn-desencriptar {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -88,35 +81,22 @@
   padding: 2%;
   gap: 8px;
   width: 25%;
-  background-color: #0a3871;
   border-radius: 24px;
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 19px;
   text-align: center;
+}
+
+.btn-encriptar {
+  background-color: #0a3871;
   color: #ffffff;
 }
 
 .btn-desencriptar {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 2%;
-  gap: 8px;
-  width: 25%;
   background: #d8dfe8;
   border: 1px solid #0a3871;
-  border-radius: 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 19px;
-  text-align: center;
   color: #0a3871;
 }
 
@@ -125,9 +105,8 @@
   margin: 0.3%;
   width: 24.5%;
   padding: 1.8%;
-} /* Fin de la sección principal */
+}
 
-/* Sección texto encriptado */
 .encriptado {
   display: flex;
   justify-content: center;
@@ -156,8 +135,7 @@
 
 .mensaje-encriptado h2 {
   width: 60%;
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
@@ -167,8 +145,7 @@
 
 .mensaje-encriptado p {
   width: 80%;
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -184,8 +161,7 @@
   visibility: hidden;
   border: none;
   resize: none;
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
@@ -195,7 +171,6 @@
 
 .encriptado textarea:focus,
 .encriptado textarea:active {
-  border: none;
   outline: none;
 }
 
@@ -204,7 +179,7 @@
   width: 80%;
   height: 50%;
   top: 15%;
-} /* Fin de la Sección texto encriptado */
+}
 
 /* Diseño responsive */
 @media (max-width: 57.5em) {
@@ -212,44 +187,53 @@
     display: flex;
     flex-direction: row;
   }
-  /* Panel Ptincipal */
+  
+  /* Panel Principal */
   .encriptar {
     width: 100%;
   }
+  
   .texto {
     width: 80%;
     height: 60%;
     left: 10%;
     top: 5%;
   }
+  
   .terminos {
     width: 80%;
     left: 10%;
     top: 67%;
   }
+  
   .terminos p {
     font-size: 16px;
   }
+  
   .botones {
     width: 80%;
     left: 10%;
     top: 70%;
   }
-  .btn-encriptar {
-    width: 48%;
-    border-radius: 16px;
-  }
+  
+  .btn-encriptar,
   .btn-desencriptar {
     width: 48%;
     border-radius: 16px;
   }
+  
+  .btn-desencriptar {
+    width: 48%;
+    border-radius: 16px;
+  }
+  
   .btn-desencriptar:hover,
   .btn-encriptar:hover {
     margin: 0.3%;
     width: 47.5%;
     padding: 1.8%;
-  } /* Fin de la sección principal */
-
+  }
+  
   /* Sección texto encriptado */
   .encriptado {
     width: 80%;
@@ -257,16 +241,19 @@
     left: 10%;
     top: 80%;
   }
+  
   .mensaje-encriptado {
     width: 100%;
     top: 5%;
   }
+  
   .mensaje-encriptado p {
     width: 80%;
   }
+  
   .encriptado img {
     top: 0;
     display: none;
     visibility: hidden;
-  } /* Fin de la Sección texto encriptado */
+  }
 }
